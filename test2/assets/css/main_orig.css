@@ -10,19 +10,6 @@
 
 /* Reset */
 
-	.object-fit_contain { object-fit: contain }
-
-	@font-face {
-	    font-family: "BigHero";
-	    src: url("../fonts/bighero.ttf");
-	}
-
-	@font-face {
-	    font-family: "BigHeroNumbers";
-	    src: url("../fonts/pulserifle.ttf");
-	}
-
-
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -1603,8 +1590,7 @@
 	}
 
 	body, input, select, textarea {
-		/*font-family: "Raleway", Helvetica, sans-serif;*/
-		font-family: Helvetica, sans-serif;
+		font-family: "Raleway", Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
 		line-height: 2em;
@@ -1667,14 +1653,14 @@
 	}
 
 	p {
-		margin: 0 0 1em 0;
+		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
 		line-height: 1em;
 		margin: 0 0 1em 0;
-		/*text-transform: uppercase;*/
+		text-transform: uppercase;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -1771,12 +1757,6 @@
 
 	.align-right {
 		text-align: right;
-	}
-
-	.bighero-font {
-
-		font-family: 'BigHero'; /*a name to be used later*/
-
 	}
 
 	input, select, textarea {
@@ -2396,7 +2376,7 @@
 						}
 
 						ul.actions > li > * {
-							/*width: 100%;*/
+							width: 100%;
 							margin: 0 !important;
 						}
 
@@ -2724,10 +2704,10 @@
 /* Feature */
 
 	.feature {
-		display: -moz-flex;
+		/*display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: flex;*/
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -2740,35 +2720,30 @@
 		}
 
 		.feature.left {
-			-moz-flex-direction: row;
+		/*	-moz-flex-direction: row;
 			-webkit-flex-direction: row;
 			-ms-flex-direction: row;
-			flex-direction: row;
+			flex-direction: row; */
 		}
 
 		.feature.right {
-			-moz-flex-direction: row-reverse;
+		/*	-moz-flex-direction: row-reverse;
 			-webkit-flex-direction: row-reverse;
 			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
+			flex-direction: row-reverse; */
 		}
 
 		.feature .image {
 			width: 48%;
-			/*width: 40%;*/
-			height: 100%;
 		}
 
 			.feature .image img {
 				max-width: 100%;
-				/*width:100%;
-				height:100%;*/
 			}
 
 		.feature .content {
 			padding: 2em 3em 0.1em 3em;
 			width: 52%;
-			/*width: 70%;*/
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -2789,7 +2764,7 @@
 				-moz-flex-direction: column;
 				-webkit-flex-direction: column;
 				-ms-flex-direction: column;
-				flex-direction: column;
+				flex-direction: column; 
 			}
 
 			.feature .image {
@@ -3356,8 +3331,7 @@
 			background-color: #1E2832;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed;
-			background-image: url("images/overlay.png"), url("../../images/cancun_blur.jpg");
-
+			background-image: url("images/overlay.png"), url("../../images/pic11.jpg");
 			background-size: cover;
 		}
 
@@ -3650,8 +3624,7 @@
 		}
 
 	#header {
-		/*background: #07090c;*/
-		background-color: #ffffff;
+		background: #07090c;
 		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
 		height: 3.25em;
@@ -3662,30 +3635,9 @@
 		top: 0;
 		width: 100%;
 		z-index: 10001;
-		font-weight: 700;
 	}
 
-
-
-
-
-		#header > .bighero-font {
-			font-family: 'BigHero', 'BigHeroNumbers'; /*a name to be used later*/
-			color: #fff;
-			display: inline-block;
-			height: inherit;
-			left: 1.25em;
-			line-height: inherit;
-			margin: 0;
-			padding: 0;
-			position: absolute;
-			top: 0;
-			font-smooth: 10em;
-		}
-
-
 		#header > h1 {
-
 			color: #fff;
 			display: inline-block;
 			height: inherit;
@@ -3706,8 +3658,7 @@
 			-webkit-transition: color 0.2s ease-in-out;
 			-ms-transition: color 0.2s ease-in-out;
 			transition: color 0.2s ease-in-out;
-			/*color: #fff;*/
-			color: #666666;
+			color: #fff;
 			display: inline-block;
 			margin-right: 1.25em;
 			text-decoration: none;
@@ -3739,12 +3690,10 @@
 			}
 
 		#header.alt {
-			/*background-color: transparent;*/
-			background-color: white;
+			background-color: transparent;
 			font-size: 1.25em;
-			padding: 0em 2em;
-			/*position: absolute;*/
-			position: fixed;
+			padding: 1em 2em;
+			position: absolute;
 		}
 
 			#header.alt > h1 {
@@ -3780,12 +3729,6 @@
 				font-size: 1em;
 			}
 
-
-
-
-
-
-
 	}
 
 	@media screen and (max-width: 480px) {
@@ -3799,8 +3742,7 @@
 			}
 
 			#header.alt {
-				/*padding: 0.5em 1em;*/
-				padding: 0.0em 1em;
+				padding: 0.5em 1em;
 			}
 
 	}
@@ -3932,19 +3874,12 @@
 
 /* Banner */
 
-	#WSTitle {
-
-		margin-top: 2em;
-		margin-bottom: 1em;
-
-	}
-
 	#banner {
 		padding: 8em 0 6em 0;
 		background-color: #1E2832;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/cancun.jpg");
+		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-size: cover;
 		text-align: center;
 	}
@@ -4017,7 +3952,7 @@
 			#banner input[type="button"].special,
 			#banner button.special,
 			#banner .button.special {
-				background-color: #ff0000;
+				background-color: #51BAA4;
 				box-shadow: none;
 				color: #fff !important;
 			}
@@ -4064,13 +3999,6 @@
 					background-color: rgba(255, 255, 255, 0.1);
 				}
 
-		#banner .bighero-font {
-			color: #fff;
-			font-size: 3em;
-			margin: 0 0 0.2em 0;
-			padding: 0;
-		}
-
 		#banner h2 {
 			font-size: 2.5em;
 			margin: 0 0 0.5em 0;
@@ -4081,7 +4009,7 @@
 			color: #fff;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
-			/*text-transform: uppercase;*/
+			text-transform: uppercase;
 		}
 
 		#banner .icon {
@@ -4125,25 +4053,35 @@
 
 		}
 
+		@media screen and (max-width: 736px) {
 
+			#banner {
+				padding: 5em 2em 3em 2em;
+			}
+
+				#banner h2 {
+					font-size: 1.5em;
+				}
+
+				#banner p {
+					font-size: 1em;
+				}
+
+				#banner .icon {
+					font-size: 2em;
+				}
+
+		}
 
 		@media screen and (max-width: 480px) {
 
 			#banner {
 				padding: 5em 2em 3em 2em;
-				background-image: url("images/overlay.png"), url("../../images/cancun_narrow.jpg");
 			}
 
-			#banner .bighero-font {
-				font-size: 1.7em;
-				margin: 0 0 -.2em 0;
-			}
-
-
-			
-			
-
-
+				#banner .icon {
+					font-size: 1.5em;
+				}
 
 		}
 
@@ -4262,10 +4200,6 @@
 				width: 100%;
 			}
 
-
-
-
-
 		}
 
 		@media screen and (max-width: 736px) {
@@ -4289,65 +4223,6 @@
 
 			#footer .inner {
 				padding: 2em 0 0.1em 0;
-			}
-
-		}
-
-
-
-
-		/*Baymax*/
-
-	#baymax {
-
-		/*background-image: url("../../images/baymax.png");*/
-		float: left; 
-		position: absolute;
-		top: 200px;
-		/*margin: 0px 15px 15px 0px;*/
-		height: 900px;
-
-
-	}
-
-
-		@media screen and (max-width: 980px) {
-
-			#baymax {
-
-			/*background-image: url("../../images/baymax.png");*/
-			top: 350px;
-			margin: 0px 0px 0px -35px;
-			height: 400px;
-
-			}
-		}
-
-
-		@media screen and (max-width: 540px) {
-
-
-			#baymax {
-
-			/*background-image: url("../../images/baymax.png");*/
-			top: 400px;
-			margin: 0px 0px 0px -35px;
-			height: 300px;
-
-			}
-
-		}
-
-		@media screen and (max-width: 390px) {
-
-
-			#baymax {
-
-			/*background-image: url("../../images/baymax.png");*/
-			top: 430px;
-			margin: 0px 0px 0px -35px;
-			height: 250px;
-
 			}
 
 		}

@@ -1,0 +1,369 @@
+	.object-fit_contain { object-fit: contain }
+
+	@font-face {
+	    font-family: "BigHero";
+	    src: url("../fonts/bighero.ttf");
+	}
+
+	@font-face {
+	    font-family: "BigHeroNumbers";
+	    src: url("../fonts/pulserifle.ttf");
+	}
+
+	.bighero-font {
+
+		font-family: 'BigHero'; /*a name to be used later*/
+
+	}
+
+
+
+
+	body, input, select, textarea {
+		/*font-family: "Raleway", Helvetica, sans-serif;*/
+		font-family: Helvetica, sans-serif;
+		/*font-size: 13pt;
+		font-weight: 400;
+		line-height: 2em;*/
+	}
+
+	p {
+		margin: 0 0 1em 0;
+	}
+
+
+	h1, h2, h3, h4, h5, h6 {
+		text-transform: none;
+	}
+
+	h2 {
+
+		font-weight: 500;
+		line-height: 1.2em;
+	}
+
+	h3 {
+
+		margin-bottom: .4em;
+		font-weight: 500;
+	}	
+
+
+	ul.actions > li > * {
+		width: 10%;
+		/*margin: 0 !important;*/
+	}
+
+
+.anchor{
+  display: block;
+  height: 1em; /*same height as header*/
+  margin-top: -1em; /*same height as header*/
+  visibility: hidden;
+}
+
+#nav {
+
+background-color: #51BAA4;
+
+}
+
+
+.feature {
+
+padding: 2em 2em 2em 2em;
+
+}
+
+
+
+	.feature .image {
+		
+		
+		display: inline-block;
+
+		/*width: 260px;
+		height: 260px;*/
+
+		width: 20%;
+
+		padding: .5em 0em 0em 0em;
+		
+	}
+
+	.feature .image img {
+
+		float: left;
+		
+		
+
+		height:100%;
+		width: 100%;
+		/*width:100%;
+		height:100%;*/
+	}
+
+	.feature .content {
+		display: inline-block;
+		clear: left;
+		padding: 0em 0em 0em 2em;
+		width: 79%;
+
+		vertical-align: top;
+
+		/*width: 70%;*/
+	}
+
+
+	@media screen and (max-width: 1280px) {
+
+		.feature {
+			margin-bottom: 4em;
+		}
+
+			.feature .content {
+				padding-left: 0em;
+				padding-right: 0em;
+				padding-top: 1em;
+				width: 100%;
+			}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		.feature.left, .feature.right {
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column; 
+		}
+
+		.feature .image {
+			width: 100%;
+		}
+
+		.feature .image img {
+			width: 100%;
+			/*padding-bottom: 1em;*/
+		}
+
+		.feature .content {
+			
+			width: 100%;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		.feature {
+			margin-bottom: 2em;
+		}
+
+			.feature .content {
+				width: 100%;
+			}
+
+	}
+
+
+
+	.wrapper.style3 {
+		/*background-color: #1E2832;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed;*/
+		background: url("images/overlay.png"), url("../../images/cancun_blur.jpg") 0 0 / cover
+		/*background-size: cover;*/
+	}
+
+
+
+	#header {
+		/*background: #07090c;*/
+		background-color: #ffffff;
+		/*color: rgba(255, 255, 255, 0.75);
+		cursor: default;
+		height: 3.25em;
+		left: 0;
+		line-height: 3.25em;
+		position: fixed;
+		text-align: right;
+		top: 0;
+		width: 100%;
+		z-index: 10001;*/
+		font-weight: 700;
+		/*height: 70px;*/
+	}
+
+
+
+
+
+	#header > .bighero-font {
+		font-family: 'BigHero', 'BigHeroNumbers'; /*a name to be used later*/
+		color: #fff;
+		display: inline-block;
+		height: inherit;
+		left: 1.25em;
+		line-height: inherit;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: 0;
+		font-smooth: 10em;
+	}
+
+
+	#header a {
+		/*-moz-transition: color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out;*/
+		/*color: #fff;*/
+		color: #666666;
+		/*display: inline-block;
+		margin-right: 1.25em;
+		text-decoration: none;*/
+	}	
+
+
+	#header.alt {
+		/*background-color: transparent;*/
+		background-color: white;
+		font-size: 1.25em;
+		padding: 0em 2em;
+		/*position: absolute;*/
+		position: fixed;
+	}	
+
+	#WSTitle {
+
+		margin-top: 2em;
+		margin-bottom: 1em;
+
+	}
+
+	#banner {
+		/*padding: 8em 0 6em 0;
+		background-color: #1E2832;
+		color: rgba(255, 255, 255, 0.75);
+		background-attachment: fixed;*/
+		background-image: url("images/overlay.png"), url("../../images/cancun.jpg");
+		/*background-size: cover;
+		text-align: center;*/
+	}	
+
+	#banner .button.special {
+		background-color: #ff0000;
+		box-shadow: none;
+		color: #fff !important;
+	}	
+
+	#banner p {
+		/*color: #fff;
+		font-size: 1.5em;
+		margin-bottom: 1.75em;*/
+		text-transform: none;
+	}	
+
+	#banner .bighero-font {
+		color: #fff;
+		font-size: 3em;
+		margin: 0 0 0.2em 0;
+		padding: 0;
+	}
+
+	#baymax {
+
+		/*background-image: url("../../images/baymax.png");*/
+		float: left; 
+		position: absolute;
+		top: 200px;
+		/*margin: 0px 15px 15px 0px;*/
+		height: 900px;
+
+
+	}
+
+
+
+
+
+
+	@media screen and (max-width: 980px) {
+
+		#baymax {
+
+			/*background-image: url("../../images/baymax.png");*/
+			top: 350px;
+			margin: 0px 0px 0px -35px;
+			height: 400px;
+
+		}
+	}
+
+
+	@media screen and (max-width: 540px) {
+
+
+		#baymax {
+
+			/*background-image: url("../../images/baymax.png");*/
+			top: 360px;
+			margin: 0px 0px 0px -35px;
+			height: 300px;
+
+		}
+
+	}
+
+	@media screen and (max-width: 480px) {	
+
+		#header.alt {
+			/*padding: 0.5em 1em;*/
+			padding: 0.0em .8em;
+		}
+
+
+		#banner {
+			padding: 5em 2em 3em 2em;
+			background: url("images/overlay.png"), url("../../images/cancun_narrow.jpg") 0 0 / cover ;
+
+		}
+
+		#banner .bighero-font {
+			font-size: 1.8em;
+			margin: 0 0 -.0em 0;
+		}
+
+	}	
+
+	@media screen and (max-width: 390px) {
+
+
+		#baymax {
+
+			/*background-image: url("../../images/baymax.png");*/
+			top: 380px;
+			margin: 0px 0px 0px -35px;
+			height: 250px;
+
+		}
+
+	}	
+
+	@media screen and (max-width: 349px) {
+
+
+		#baymax {
+
+			/*background-image: url("../../images/baymax.png");*/
+			top: 400px;
+			margin: 0px 0px 0px -35px;
+			height: 250px;
+
+		}
+
+	}	
+

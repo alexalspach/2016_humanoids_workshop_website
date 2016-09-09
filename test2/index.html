@@ -6,11 +6,38 @@
 -->
 <html>
 	<head>
-		<title>Retrospect by TEMPLATED</title>
+
+		<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="images/favicons/manifest.json">
+		<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="images/favicons/favicon.ico">
+		<meta name="apple-mobile-web-app-title" content="Can We Build Baymax?">
+		<meta name="application-name" content="Can We Build Baymax?">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+		<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+
+
+
+		<title>Can we Build Baymax?</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/main_orig.css" />
+		<link rel="stylesheet" href="assets/css/override.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -27,28 +54,30 @@
 		<!-- Nav -->
 			<nav id="nav">
 				<ul class="links">
-					<li><a href="#top">TOP</a></li>
-					<li><a href="#abstract">ABSTRACT</a></li>
-					<li><a href="#schedule">SCHEDULE</a></li>
-					<li><a href="#speakers">SPEAKERS</a></li>
-					<li><a href="elements.html">ORGANIZERS</a></li>
+					<li><a href="#top">Top</a></li>
+					<li><a href="#abstract">Abstract</a></li>
+					<li><a href="#schedule">Schedule</a></li>
+					<li><a href="#speakers">Speakers</a></li>
+					<li><a href="#organizers">Organizers</a></li>
+					<li><a href="#links">Related Links</a></li>
+					<li><a href="#contact">Contact</a></li>
 					
 				</ul>
 			</nav>
 
 		<!-- Banner -->
-		<a name="top"></a> 
+		<span class="anchor" id="top"></span>
 			<section id="banner">
 				<!--<i class="icon fa-diamond"></i>-->
 				<div id="WSTitle">
 					<div class="bighero-font">Can We Build</div>
 					<div class="bighero-font">Baymax?</div>
 				</div>
-				<p>SOFT ROBOTICS AND OTHER STUFF</p>
+				<p>Part II: Making Hard Robots Soft<br>Sensors, Skin, and Airbags</p>
 				<p>Cancun, Mexico
-				<br>Nov. X - XX</p> 
+				<br>Nov. 15, 2016</p> 
 				<ul class="actions">
-					<li><a href="#" class="button big special">Schedule</a></li>
+					<li><a href="#schedule" class="button big special">Schedule</a></li>
 				</ul>
 
 
@@ -66,221 +95,245 @@
 
 
 		<!-- One -->
-		<a name="abstract"></a> 
-			<section id="one" class="wrapper style1">
-				<div class="inner">
+		<span class="anchor" id="abstract"></span>
+		<section id="one" class="wrapper style1">
+			<div class="inner">
 
-					<h2>Abstract</h2>
-					<p>Baymax is a humanoid character in the recent Disney feature animation "Big Hero 6." It is a healthcare robot with an inflatable body, capable of walking and physically interacting with people. However, in the real world, it is not an easy robot to build. For interactions with humans, a soft body structure will be more advantageous with increased human safety. For walking or manipulation, on the other hand, a rigid body structure with well-defined joints will be more practical since it not only facilitates precise control but also provides structural strength to support its body weight and certain payloads. In order to design a humanoid with these conflicting mechanical properties, we need to explore and integrate various solutions. In this workshop, we will discuss topics related to building robots like Baymax with special features including, but not limited to, safe human-robot interactions, torque controls on joints or limbs, compliant joint mechanisms, inflatable body structures, and soft skin sensors and muscle actuators.</p>
+				<h2><strong>Abstract</strong></h2>
+				<p>This will be the 2nd workshop entitled “Can we build Baymax?”. The 1st workshop was held at Humanoids 2015 in Korea. Baymax is the soft humanoid character in Disney's feature animation "Big Hero 6." It is a healthcare robot with an inflatable body, capable of walking, bumping into surrounding objects and physically interacting with people. However, in the real world, it is not an easy robot to build. For the realization of this robot, awareness of the environment, especially a sense of touch and vision, is very important. Covering robots with soft material to protect both humans and the robot is also required. Integrating these features into actual hardware using reasonable fabrication methods is a challenging task. In this workshop, we will discuss topics related to building robots like Baymax with special features including but not limited to implementation of skin sensors, methods to protect humans and robots, and fabrication of soft skin for humanoids.</p>
+
+				<!--
+				<br>
+				<p>The workshop's topics include, but are not limited to:</p>
+				<ul>
+					<li> Safe human-robot interactions </li>
+					<li> Force and Torque control on joints and limbs </li>
+					<li> Compliant joint mechanisms </li>
+					<li> Inflatable body structures </li>
+					<li> Soft skin sensors </li>
+					<li> Muscle actuators </li>
+				</ul>
+				-->
 
 
-					<br>
-					<p>The workshop's topics include, but are not limited to:</p>
-					<ul>
-						<li> Safe human-robot interactions </li>
-						<li> Force and Torque control on joints and limbs </li>
-						<li> Compliant joint mechanisms </li>
-						<li> Inflatable body structures </li>
-						<li> Soft skin sensors </li>
-						<li> Muscle actuators </li>
-					</ul>
-
-	
-					
-				</div>
-			</section>
+				
+			</div>
+		</section>
 
 		<!-- Two -->
-		<a name="schedule"></a> 
-			<section id="two" class="wrapper style2">
-				<div class="inner">
+		<span class="anchor" id="schedule"></span>
+		<section id="two" class="wrapper style2">
+			<div class="inner">
 
-					<h2>Schedule</h2>
+				<h2><strong>Schedule</strong></h2>
+				
+
+
+
+				<table>
+					<thead>
+						<tr>
+							<th style="min-width: 120px;">Time</th>
+							<th>Speaker</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+					  <td>09:20 - 09:30</td>
+					  <td>Welcome. Katsu Yamane, Disney Research</td>
+					</tr>
+
+					<tr>
+					  <td>09:30 - 10:00</td>
+					  <td>Chris Atkeson, Carnegie Mellon University</td>
+					</tr>
+
+					<tr>
+					  <td>10:00 - 10:30</td>
+					  <td>Nikos Tsagarakis, Italian Institute of Technology</td>
+					</tr>
+
+					<tr>
+					  <td>10:30 - 11:00</td>
+					  <td>Manuel Catalano, Italian Institute of Technology</td>
+					</tr>			  
+
+					<tr>
+					  <td>11:00 - 11:10</td>
+					  <td><strong>Break</strong></td>
+					</tr>
+
+					<tr>
+					  <td>11:10 - 11:40</td>
+					  <td>BaekKyu Cho, Kookmin University</td>
+					</tr>
+
+					<tr>
+					  <td>11:40 - 12:10</td>
+					  <td>Albert Wang, Massachusetts Institute of Technology</td>
+					</tr>
+
+					<tr>
+					  <td>12:10 - 12:40</td>
+					  <td>Yong-Lae Park, Carnegie Mellon University</td>
+					</tr>
+
+					<tr>
+					  <td>12:40 - 13:40</td>
+					  <td><strong>Lunch</strong></td>
+					</tr>
+
+					<tr>
+					  <td>13:40 - 14:10</td>
+					  <td>Minoru Asada, Osaka University</td>
+					</tr>
+
+					<tr>
+					  <td>14:10 - 14:40</td>
+					  <td>Ikuo Mizuuchi, Tokyo University of Agriculture and Technology</td>
+					</tr>
+
+					<tr>
+					  <td>14:40 - 15:10</td>
+					  <td>Levi Rupert, Brigham Young University</td>
+					</tr>
+
+					<tr>
+					  <td>15:10 - 15:20</td>
+					  <td><strong>Break</strong></td>
+					</tr>
+
+					<tr>
+					  <td>15:20 - 15:50</td>
+					  <td>Joohyung Kim, Disney Research</td>
+					</tr>
+
+					<tr>
+					  <td>15:50 - 16:50</td>
+					  <td>Katsu Yamane, Disney Research</td>
+
+					</tr>
+
+
+					<tr>
+					  <td>16:50 - 17:00</td>
+					  <td>Wrap-up</td>
+					</tr>
+
+					</tbody>
 					
-
-
-
-					<table>
-						<thead>
-							<tr>
-								<th style="min-width: 120px;">Time</th>
-								<th>Speaker</th>
-							</tr>
-						</thead>
-						<tbody><tr>
-						  <td>09:20 - 09:30</td>
-						  <td>Welcome. Katsu Yamane, Disney Research</td>
-						</tr>
-
-						<tr>
-						  <td>09:30 - 10:00</td>
-						  <td>Chris Atkeson, Carnegie Mellon University</td>
-						</tr>
-
-						<tr>
-						  <td>10:00 - 10:30</td>
-						  <td>Nikos Tsagarakis, Italian Institute of Technology</td>
-						</tr>
-
-						<tr>
-						  <td>10:30 - 11:00</td>
-						  <td>Manuel Catalano, Italian Institute of Technology</td>
-						</tr>			  
-
-						<tr>
-						  <td>11:00 - 11:10</td>
-						  <td><strong>Break</strong></td>
-						</tr>
-
-						<tr>
-						  <td>11:10 - 11:40</td>
-						  <td>BaekKyu Cho, Kookmin University</td>
-						</tr>
-
-						<tr>
-						  <td>11:40 - 12:10</td>
-						  <td>Albert Wang, Massachusetts Institute of Technology</td>
-						</tr>
-
-						<tr>
-						  <td>12:10 - 12:40</td>
-						  <td>Yong-Lae Park, Carnegie Mellon University</td>
-						</tr>
-
-						<tr>
-						  <td>12:40 - 13:40</td>
-						  <td><strong>Lunch</strong></td>
-						</tr>
-
-						<tr>
-						  <td>13:40 - 14:10</td>
-						  <td>Minoru Asada, Osaka University</td>
-						</tr>
-
-						<tr>
-						  <td>14:10 - 14:40</td>
-						  <td>Ikuo Mizuuchi, Tokyo University of Agriculture and Technology</td>
-						</tr>
-
-						<tr>
-						  <td>14:40 - 15:10</td>
-						  <td>Levi Rupert, Brigham Young University</td>
-						</tr>
-
-						<tr>
-						  <td>15:10 - 15:20</td>
-						  <td><strong>Break</strong></td>
-						</tr>
-
-						<tr>
-						  <td>15:20 - 15:50</td>
-						  <td>Joohyung Kim, Disney Research</td>
-						</tr>
-
-						<tr>
-						  <td>15:50 - 16:50</td>
-						  <td>Katsu Yamane, Disney Research</td>
-
-						</tr>
-
-
-						<tr>
-						  <td>16:50 - 17:00</td>
-						  <td>Wrap-up</td>
-						</tr>
-
-						</tbody>
-						
-					</table>
+				</table>
 
 
 
 
-				</div>
-			</section>
+			</div>
+		</section>	
 
 		<!-- Three -->
-		<a name="speakers"></a>
-			<section id="three" class="wrapper style3">
-				<div class="inner">
-					<article class="feature left">
-						<span class="image object-fit_contain"><img src="images/alex_face.jpg" alt="" /></span>
-						<div class="content">
-							<h2>9:00 - 9:45 Design of a Soft Upper Body Robot for Physical Human-Robot Interaction</h2>
-							<p>To physically interact with children, a robot should be safe and durable. We have developed a small toy sized robot with a soft skin that is robust to playful physical interaction. The upper body, including the arms, pelvis, chest and back has soft, 3D printed air-filled modules connected to pressure sensors to sense contact and provide protection to the child and robot while interacting. These soft skin modules cover the underlying actuators and the rigid 3D printed frame with printed bearings. In this paper, we present the design process of these modules and demonstrate their efficacy by implementing a “grab and move” user interface for posing the robot link by link.</p>
-							<!--<ul class="actions">
-								<li>
-									<a href="#" class="button alt">More</a>
-								</li>
-							</ul>-->
-						</div>
-					</article>
-					<article class="feature left">
-						<span class="image object-fit_contain"><img src="images/jkim_face.jpg" alt="" /></span>
-						<div class="content">
-							<h2>9:00 - 9:45 Design of a Soft Upper Body Robot for Physical Human-Robot Interaction</h2>
-							<p>To physically interact with children, a robot should be safe and durable. We have developed a small toy sized robot with a soft skin that is robust to playful physical interaction. The upper body, including the arms, pelvis, chest and back has soft, 3D printed air-filled modules connected to pressure sensors to sense contact and provide protection to the child and robot while interacting. These soft skin modules cover the underlying actuators and the rigid 3D printed frame with printed bearings. In this paper, we present the design process of these modules and demonstrate their efficacy by implementing a “grab and move” user interface for posing the robot link by link.</p>
-							<!--<ul class="actions">
-								<li>
-									<a href="#" class="button alt">More</a>
-								</li>
-							</ul>-->
-						</div>
-					</article>
-				</div>
-			</section>
+		<span class="anchor" id="speakers"></span>
+		<section id="three" class="wrapper style3">
+			<div class="inner">
+
+				<h2><strong>Speakers</strong></h2>
+
+
+
+
+
+
+
+				<article class="feature left">
+					<span class="image"><img src="images/alex_face.jpg" alt="" /></span>
+					<div class="content">
+
+						<h3>9:00 - 9:45</h3>
+						<h2>Alex Alspach<br>
+						Design of a Soft Upper Body Robot for Physical Human-Robot Interaction</h2>
+
+						<!--To physically interact with children, a robot should be safe and durable. We have developed a small toy sized robot with a soft skin that is robust to playful physical interaction. s and demonstrate their efficacy by implementing a “grab and move” user interface for posing the robot link by link.-->
+					</div>
+
+
+				</article>
+
+
+				<article class="feature left">
+					<span class="image object-fit_contain"><img src="images/jkim_face.jpg" alt="" /></span>
+					<div class="content">
+
+						<h3>9:00 - 9:45</h3>
+						<h2>Joohyung Kim<br>
+						Some other Awesome title</h2>
+
+						To physically interact with children, a robot should be safe and durable. We have developed a small toy sized robottoy sized robot with a soft skin that is robust to playful physical interaction. The upper body, including the arms, pelvis, chest and back has soft, 3D printed air-filled modules connected to pressure sensors to sense contact and provide protection to the child and robot while interacting. These soft skin modules cover the underlying actuators and the rigid 3D printed frame with printed bearings. In this paper, we present the design process of these modules and demo with a soft skin that is robust to playful physical interaction. The upper body, including the arms, pelvis, chest and back has soft, 3D printed air-filled modules connected to pressure sensors to sense contact and provide protection to the child and robot while interacting. These soft skin modules cover the underlying actuators and the rigid 3D printed frame with printed bearings. In this paper, we present the design process of these modules and demonstrate their efficacy by implementing a “grab and move” user interface for posing the robot link by link.
+						<!--<ul class="actions">
+							<li>
+								<a href="#" class="button alt">More</a>
+							</li>
+						</ul>-->
+					</div>
+				</article>
+			</div>
+		</section>
 
 		<!-- Four -->
-			<section id="four" class="wrapper style2 special">
-				<div class="inner">
-					<header class="major narrow">
-						<h2>Get in touch</h2>
-						<p>Ipsum dolor tempus commodo adipiscing</p>
-					</header>
-					<form action="#" method="POST">
-						<div class="container 75%">
-							<div class="row uniform 50%">
-								<div class="6u 12u$(xsmall)">
-									<input name="name" placeholder="Name" type="text" />
-								</div>
-								<div class="6u$ 12u$(xsmall)">
-									<input name="email" placeholder="Email" type="email" />
-								</div>
-								<div class="12u$">
-									<textarea name="message" placeholder="Message" rows="4"></textarea>
-								</div>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><input type="submit" class="special" value="Submit" /></li>
-							<li><input type="reset" class="alt" value="Reset" /></li>
-						</ul>
-					</form>
-				</div>
-			</section>
+		<span class="anchor" id="organizers"></span>
+		<section id="four" class="wrapper style1">
+			<div class="inner">
+
+				<h2><strong>Organizers</strong></h2>
+
+				
+				<ul>
+					<li>Chris Atkeson, Carnegie Mellon University</li>
+					<li>Jinoh Lee, Istituto Italiano di Tecnologia</li>
+					<li>Katsu Yamane, Disney Research</li>
+					<li>Joohyung Kim, Disney Research</li>
+				</ul>
+				
+			</div>
+		</section>
+
+		<!-- Five -->
+		<span class="anchor" id="links"></span>
+		<section id="five" class="wrapper style2">
+			<div class="inner">
+
+				<h2><strong>Related Links</strong></h2>
+
+				
+				<ul>
+					<li><a href="http://www.cs.cmu.edu/~cga/humanoids15workshop/">Can we Build Baymax? Humanoids 2015</a></li>
+					<li><a href="http://www.build-baymax.org">Build-Baymax.org</a></li>
+				</ul>
+				
+			</div>
+		</section>
+
+		<!-- Five -->
+		<span class="anchor" id="contact"></span>
+		<section id="five" class="wrapper style1">
+			<div class="inner">
+
+				<h2><strong>Contact</strong></h2>
+
+				
+				<ul>
+					<li>Joohyung Kim: joohyung.kim at disneyresearch.com</li>
+				</ul>
+				
+			</div>
+		</section>		
+
+
+
+
+
 
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="inner">
-					<ul class="icons">
-						<li><a href="#" class="icon fa-facebook">
-							<span class="label">Facebook</span>
-						</a></li>
-						<li><a href="#" class="icon fa-twitter">
-							<span class="label">Twitter</span>
-						</a></li>
-						<li><a href="#" class="icon fa-instagram">
-							<span class="label">Instagram</span>
-						</a></li>
-						<li><a href="#" class="icon fa-linkedin">
-							<span class="label">LinkedIn</span>
-						</a></li>
-					</ul>
-					<ul class="copyright">
-						<li>&copy; Untitled.</li>
-						<li>Images: <a href="http://unsplash.com">Unsplash</a>.</li>
-						<li>Design: <a href="http://templated.co">TEMPLATED</a>.</li>
-					</ul>
+					Designed by Alex Alspach. 2016
 				</div>
 			</footer>
 
