@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,700");
+/*@import url(font-awesome.min.css);*/
+
 
 /*
 	Retrospect by TEMPLATED
@@ -1603,7 +1603,6 @@
 	}
 
 	body, input, select, textarea {
-		/*font-family: "Raleway", Helvetica, sans-serif;*/
 		font-family: Helvetica, sans-serif;
 		font-size: 13pt;
 		font-weight: 400;
