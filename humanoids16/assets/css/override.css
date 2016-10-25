@@ -17,6 +17,13 @@
 	}
 
 
+	/*Table*/
+	.schedule .sched_time {width: 120px;}
+
+	.schedule .sched_speaker { }
+
+
+
 	/*Show more*/
 	/*div.text-container {
     margin: 0 auto;
@@ -251,6 +258,13 @@
     		text-justify: inter-word;*/
 
 		}
+
+
+		/*Table*/
+		.schedule .sched_time {width: 100%; float:left; padding-bottom: 0;}
+		.schedule .sched_speaker { float:left; padding-top: 0;}
+
+
 	}
 
 
