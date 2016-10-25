@@ -46,7 +46,7 @@
 		<meta property="og:type"               content="article" />
 		<meta property="og:title"              content="Can we Build Baymax? Humanoids 2016" />
 		<meta property="og:description"        content="We are glad to announce that the full-day workshop 'Can We Build Baymax? Part 2. Making Hard Robots Soft: Sensors, Skin, and Airbags will be held on November 15, 2016, at IEEE-RAS International Conference on Humanoids Robots (Humanoids 2016), Cancun, Mexico. We invite you to contribute and to participate in this workshop."/>
-		<meta property="og:image"              content="http://static01.nyt.com/images/2015/02/19/arts/international/19iht-btnumbers19A/19iht-btnumbers19A-facebookJumbo-v2.jpg" />
+		<meta property="og:image"              content="images/facebook/banner.jpg" />
 
 
 
@@ -119,12 +119,15 @@
 
 				<br>
  
-				<p>The workshop's topics include, but are not limited to:
-				<li>Proprioceptive and exteroceptive sensors (tactile/force/proximity/whole-body vision)</li>
-				<li>Inflatable skin and airbags</li>
-				<li>Soft mechanisms for physical human-robot interaction</li>
-				<li>Human-friendly humanoid design and implementation</li>
-				<li>Self recovery/healing technology for robots</li></p>
+				<p>The workshop's topics include, but are not limited to:</p>
+				<ul>
+					<li>Proprioceptive and exteroceptive sensors (tactile/force/proximity/whole-body vision)</li>
+					<li>Inflatable skin and airbags</li>
+					<li>Soft mechanisms for physical human-robot interaction</li>
+					<li>Human-friendly humanoid design and implementation</li>
+					<li>Self recovery/healing technology for robots</li>
+				</ul>
+				
 
 				<br><br>
 
@@ -135,11 +138,12 @@
  				<br>
 
 				<!-- <p><strong>Important dates:</strong> -->
-				<p>Important dates:
-				<li>October 16, 2016: Submissions due</li>
-				<li>October 23, 2016: Acceptance notification</li>
-				<li>November 15, 2016: Workshop</li></p>
-
+				<p>Important dates:</p>
+				<ul>	
+					<li>October 16, 2016: Submissions due</li>
+					<li>October 23, 2016: Acceptance notification</li>
+					<li>November 15, 2016: Workshop</li>
+				</ul>
 				<br>
 
 				<p>To participate, please submit an abstract (1-2 pages, double-column, PDF) via email to <br>
@@ -282,10 +286,27 @@
 					  <td>Closing</td>
 					</tr>
 
+					<tr>
+						<td>18:00 - 18:15</td>
+
+						<td>Alex Alspach
+							<div class="talk-title">Design of a Soft Upper Body Robot for Physical Human-Robot Interaction</div>
+
+						  	<div class="text-content short-text">
+        					To physically interact with children, a robot should be safe and durable. We have developed a small toy sized robot with a soft skin that is robust to playful physical interaction. The upper body, including the arms, pelvis, chest and back has soft, 3D printed air-filled modules connected to pressure sensors to sense contact and provide protection to the child and robot while interacting. These soft skin modules cover the underlying actuators and the rigid 3D printed frame with printed bearings. In this paper, we present the design process of these modules and demonstrate their efficacy by implementing a "grab and move" user interface for posing the robot link by link.
+    						</div>
+
+						    <div class="show-more">
+						        <a href="#">Abstract</a>
+						    </div>
+
+						</td>
+
+					</tr>
+
 					</tbody>
 					
 				</table>
-
 
 
 
@@ -480,7 +501,7 @@
 
 				<div class="logo_container2">
 					<center>
-					<img class="org_logos2 object-fit_contain" src="images/logos/web/logos.png" alt="" />
+					<img class="org_logos2 object-fit_contain" src="images/logos/web/logos2.png" alt="" />
 					</center>
 				</div>
 
@@ -550,5 +571,58 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+
+			<script>
+				$(".show-more a").each(function() {
+				    var $link = $(this);
+				    var $content = $link.parent().prev("div.text-content");
+
+				    console.log($link);
+
+				    var visibleHeight = $content[0].clientHeight;
+				    var actualHide = $content[0].scrollHeight - 1;
+
+				    console.log(actualHide);
+				    console.log(visibleHeight);
+
+				    if (actualHide > visibleHeight) {
+				        $link.show();
+				    } else {
+				        $link.hide();
+				    }
+				});
+
+				$(".show-more a").on("click", function() {
+				    var $link = $(this);
+				    var $content = $link.parent().prev("div.text-content");
+				    var linkText = $link.text();
+
+				    $content.toggleClass("short-text, full-text");
+
+				    $link.text(getShowLinkText(linkText));
+
+				    return false;
+				});
+
+				function getShowLinkText(currentText) {
+				    var newText = '';
+
+				    if (currentText.toUpperCase() === "ABSTRACT") {
+				        newText = "Hide Abstract";
+				    } else {
+				        newText = "Abstract";
+				    }
+
+				    return newText;
+				}
+			</script>
+
+
+
+
 	</body>
 </html>
+
+
+
+
