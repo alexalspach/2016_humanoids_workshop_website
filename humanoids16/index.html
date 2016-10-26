@@ -616,8 +616,6 @@
 
 				<br>
 
-
-				<!-- <a name="org_cga"></a> --> <!-- anchor -->
 				<span class="anchor2" id="org_atkeson"></span>
 				<article class="feature left">
 					<span class="image object-fit_contain"><img src="images/speakers/web/Atkeson_Chris.jpg" alt="" /></span>
@@ -671,22 +669,12 @@
 				</article>	
 
 
-
+				<!-- Logos -->
 				<div class="logo_container2">
 					<center>
 					<img class="org_logos2 object-fit_contain" src="images/logos/web/logos2.png" alt="" />
 					</center>
 				</div>
-
-<!--
-<div class="logo_container">
-		<img class="org_logos object-fit_contain" src="images/logos/web/square/iit_advr_logo_1.png" alt="" />
-		<img class="org_logos object-fit_contain" src="images/logos/web/square/walkman_logo.png" alt="" />
-		<img class="org_logos object-fit_contain" src="images/logos/web/square/ri_logo.png" alt="" />
-		<img class="org_logos object-fit_contain" src="images/logos/web/square/dr_logo.png" alt="" />
-</div>
--->
-
 
 				
 			</div>
@@ -731,64 +719,64 @@
 
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<p>Designed by Alex Alspach. 2016</p>
-				</div>
-			</footer>
+		<footer id="footer">
+			<div class="inner">
+				<p>Designed by Alex Alspach. 2016</p>
+			</div>
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
 
 
-			<script>
-				$(".show-more a").each(function() {
-				    var $link = $(this);
-				    var $content = $link.parent().prev("div.text-content");
+		<script>
+			$(".show-more a").each(function() {
+			    var $link = $(this);
+			    var $content = $link.parent().prev("div.text-content");
 
-				    console.log($link);
+			    console.log($link);
 
-				    var visibleHeight = $content[0].clientHeight;
-				    var actualHide = $content[0].scrollHeight - 1;
+			    var visibleHeight = $content[0].clientHeight;
+			    var actualHide = $content[0].scrollHeight - 1;
 
-				    console.log(actualHide);
-				    console.log(visibleHeight);
+			    console.log(actualHide);
+			    console.log(visibleHeight);
 
-				    if (actualHide > visibleHeight) {
-				        $link.show();
-				    } else {
-				        $link.hide();
-				    }
-				});
+			    if (actualHide > visibleHeight) {
+			        $link.show();
+			    } else {
+			        $link.hide();
+			    }
+			});
 
-				$(".show-more a").on("click", function() {
-				    var $link = $(this);
-				    var $content = $link.parent().prev("div.text-content");
-				    var linkText = $link.text();
+			$(".show-more a").on("click", function() {
+			    var $link = $(this);
+			    var $content = $link.parent().prev("div.text-content");
+			    var linkText = $link.text();
 
-				    $content.toggleClass("short-text, full-text");
+			    $content.toggleClass("short-text, full-text");
 
-				    $link.text(getShowLinkText(linkText));
+			    $link.text(getShowLinkText(linkText));
 
-				    return false;
-				});
+			    return false;
+			});
 
-				function getShowLinkText(currentText) {
-				    var newText = '';
+			function getShowLinkText(currentText) {
+			    var newText = '';
 
-				    if (currentText.toUpperCase() === "ABSTRACT") {
-				        newText = "Hide Abstract";
-				    } else {
-				        newText = "Abstract";
-				    }
+			    if (currentText.toUpperCase() === "ABSTRACT") {
+			        newText = "Hide Abstract";
+			    } else {
+			        newText = "Abstract";
+			    }
 
-				    return newText;
-				}
-			</script>
+			    return newText;
+			}
+		</script>
 
 
 
