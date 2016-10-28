@@ -36,6 +36,7 @@
 	.talk-title{
 	    line-height: 1.5em;
 	    font-weight: normal;
+	    font-style: italic;
 	    /*font-weight: 700;*/
 	}
 
@@ -207,6 +208,12 @@
 		.feature .content {
 
 		}
+
+		.wrapper {
+			padding-left: 3em;
+			padding-right: 3em;			
+		}
+
 
 	}
 
