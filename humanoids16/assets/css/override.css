@@ -23,7 +23,9 @@
 		text-align: center;
 	}
 
-	.schedule .sched_speaker { }
+	.schedule .sched_speaker { 
+    	padding-right: 1.5em;
+	}
 
 
 
