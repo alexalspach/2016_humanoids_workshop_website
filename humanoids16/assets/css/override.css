@@ -1,5 +1,8 @@
 	.object-fit_contain { object-fit: contain }
 
+	@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+
 	@font-face {
 	    font-family: "BigHero";
 	    src: url("../fonts/bighero.ttf");
@@ -27,12 +30,24 @@
     	padding-right: 1.5em;
 	}
 
+	#footer a {
 
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.75);
+		font-size: 1.1em;
+
+
+	}
 
 	/*Show more*/
 	/*div.text-container {
     margin: 0 auto;
     width: 75%;    
+	}*/
+
+	/*#banner .button.special {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 48px;
 	}*/
 
 	.talk-title{
@@ -80,7 +95,9 @@
 	}
 
 
-
+	body.landing {
+		background-color: #EEE;
+	}
 
 
 	body, input, select, textarea {
@@ -258,6 +275,11 @@
 		.feature .content {
 
 		}
+
+		#banner p {
+			line-height: 1.5em;
+		}
+		
 
 	}
 
